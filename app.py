@@ -20,11 +20,11 @@ def get_api_key():
         return env_file_key
 
     # 2. Check Streamlit cloud secrets
-    try:
-        if "GROQ_API_KEY" in st.secrets:
-            return st.secrets["GROQ_API_KEY"]
-    except Exception:
-        pass
+    # try:
+    #     if "GROQ_API_KEY" in st.secrets:
+    #         return st.secrets["GROQ_API_KEY"]
+    # except Exception:
+    #     pass
 
     # 3. Check OS environment variables
     return os.getenv("GROQ_API_KEY")
