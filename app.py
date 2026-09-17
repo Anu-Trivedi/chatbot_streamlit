@@ -106,7 +106,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 
 # Main Title Area
-st.title("💬 Interactive LLM Chat Studio")
+st.header("💬 What are we focusing on today?")
 st.caption(f"Running **{model}** via Groq Cloud | Optimized for latency & live token streaming")
 
 # Display Conversation History
